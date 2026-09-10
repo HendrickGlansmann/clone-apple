@@ -29,7 +29,6 @@ body {
     color: var(--color-text-primary);
     background: var(--color-bg);
     -webkit-font-smoothing: antialiased;
-    padding-top: var(--nav-height);
 }
 
 a {
@@ -504,8 +503,8 @@ img {
 .media-gallery-item {
     position: relative;
     flex: 0 0 auto;
-    width: 280px;
-    height: 380px;
+    width: auto;
+    height: 692px;
     border-radius: 18px;
     overflow: hidden;
     scroll-snap-align: start;
