@@ -415,7 +415,9 @@ img {
    5. PROMO (grid 2 colunas de produtos)
    ------------------------------------------------------------------------- */
 .section-promo {
-    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    padding-left: max(12px, env(safe-area-inset-left) - 12px);
+    padding-right: max(12px, env(safe-area-inset-right) - 12px);
 }
 
 @media (min-width: 735px) {
@@ -424,8 +426,13 @@ img {
     }
 }
 
+.section-promo .tile-image-wrapper {
+    height: 580px;
+}
+
 .section-promo .tile-wrapper {
     min-height: 580px;
+    padding: 53px 0 60px;
 }
 
 .section-promo .tile-copy-wrapper {
@@ -476,6 +483,8 @@ img {
     background: #000;
     padding: 48px 0;
 }
+
+
 
 .media-gallery {
     position: relative;
